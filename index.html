@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="both">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="一场关于 AI、效率与人才成长的互动管理模拟。A bilingual management simulation about AI, performance and human growth.">
+  <meta name="theme-color" content="#f6f4ef">
+  <meta name="color-scheme" content="light">
+  <title>You Are the Manager｜AI 管理模拟</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23192320'/%3E%3Cpath d='M18 43V29m14 14V21m14 22V14' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#experience">
+    <span class="lang-zh">跳到正文</span>
+    <span class="lang-en">Skip to content</span>
+  </a>
+
+  <header class="site-header">
+    <a class="brand" href="#cover" data-go="0" aria-label="Back to cover">
+      <span class="brand-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="brand-name">THE MANAGER LAB</span>
+    </a>
+
+    <span class="header-status" id="header-status">01 / 05</span>
+
+    <div class="language-switcher" role="group" aria-label="Language">
+      <button type="button" data-language="both" class="is-active" aria-pressed="true">双语</button>
+      <button type="button" data-language="zh" aria-pressed="false">中</button>
+      <button type="button" data-language="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main id="experience">
+    <section class="screen cover-screen is-active" id="cover" data-screen="0" aria-labelledby="cover-title">
+      <div class="page-shell cover-content">
+        <div class="title-pair cover-title" id="cover-title">
+          <h1 class="lang-zh">你就是<br>管理者</h1>
+          <h1 class="lang-en">You Are the<br>Manager</h1>
+        </div>
+
+        <p class="cover-prompt">
+          <span class="lang-zh">做出三次选择。</span>
+          <span class="lang-en">Make three choices.</span>
+        </p>
+
+        <div class="cover-path">
+          <span>
+            <b>01</b>
+            <span><span class="lang-zh">保护学习</span><span class="lang-en">Protect learning</span></span>
+          </span>
+          <span>
+            <b>02</b>
+            <span><span class="lang-zh">守住能力</span><span class="lang-en">Protect capability</span></span>
+          </span>
+          <span>
+            <b>03</b>
+            <span><span class="lang-zh">推动成长</span><span class="lang-en">Grow further</span></span>
+          </span>
+        </div>
+
+        <button class="primary-button" type="button" data-go="1">
+          <span class="lang-zh">开始体验</span>
+          <span class="lang-en">Start</span>
+          <span aria-hidden="true">→</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="screen scene-screen" id="act-1" data-screen="1" aria-labelledby="act-1-title">
+      <div class="page-shell">
+        <div class="scene-heading">
+          <span class="scene-number">01</span>
+          <div class="title-pair pair-title" id="act-1-title">
+            <h2 class="lang-zh">写得更快，<br>不等于真正学会。</h2>
+            <h2 class="lang-en">Faster output is not<br>the same as real learning.</h2>
+          </div>
+          <span class="scene-count">01 / 03</span>
+        </div>
+
+        <div class="scene-layout">
+          <section class="scenario-panel" aria-labelledby="scenario-1-label">
+            <span class="section-label" id="scenario-1-label">
+              <span class="lang-zh">情境</span>
+              <span class="lang-en">The situation</span>
+            </span>
+
+            <div class="scenario-text">
+              <p class="lang-zh">一名初级开发在项目中自主使用 AI 辅助编码。最近一段时间，他交付功能的速度明显变快，也能尝试接手之前很难独立完成的需求。但团队 review 的时候，大家发现他对部分代码的底层逻辑并不熟悉。</p>
+              <p class="lang-en">A junior developer voluntarily uses AI to write code. Recently, he has been delivering features much faster and can take on requirements he previously struggled to complete alone. However, during team reviews, the team notices that he does not understand the underlying logic of some of the code.</p>
+            </div>
+
+            <div class="question-block">
+              <span class="section-label">
+                <span class="lang-zh">问题</span>
+                <span class="lang-en">Question</span>
+              </span>
+              <p class="question-text lang-zh">如果你是他的管理者，你更倾向哪一种思路？或者你会设计不一样的做法？你的判断依据是什么？</p>
+              <p class="question-text lang-en">As his manager, which perspective resonates most? Or would you design a different approach? What is your reasoning?</p>
+            </div>
+          </section>
+
+          <section class="decision-panel" aria-label="Three management perspectives">
+            <span class="section-label">
+              <span class="lang-zh">选择一个方案</span>
+              <span class="lang-en">Choose one approach</span>
+            </span>
+
+            <div class="option-list">
+              <div class="option-block">
+                <button class="option" type="button" data-choice="1" aria-pressed="false">
+                  <span class="option-key">A</span>
+                  <span class="option-copy">
+                    <strong class="lang-zh">继续鼓励他使用 AI，以交付成果为主要导向，在代码评审里持续跟进学习。</strong>
+                    <strong class="lang-en">Continue encouraging AI use, focus on delivery outcomes, and support learning through code reviews.</strong>
+                  </span>
+                  <span class="radio" aria-hidden="true"></span>
+                </button>
+                <div class="path-logic" aria-live="polite"></div>
+              </div>
+
+              <div class="option-block">
+                <button class="option" type="button" data-choice="2" aria-pressed="false">
+                  <span class="option-key">B</span>
+                  <span class="option-copy">
+                    <strong class="lang-zh">设置使用约束，例如交付前必须讲解代码逻辑，保证他理解实现原理。</strong>
+                    <strong class="lang-en">Set usage constraints—for example, require him to explain the code logic before delivery to ensure understanding.</strong>
+                  </span>
+                  <span class="radio" aria-hidden="true"></span>
+                </button>
+                <div class="path-logic" aria-live="polite"></div>
+              </div>
+
+              <div class="option-block">
+                <button class="option" type="button" data-choice="3" aria-pressed="false">
+                  <span class="option-key">C</span>
+                  <span class="option-copy">
+                    <strong class="lang-zh">安排阶段性脱离 AI 的练习任务，同步夯实基础能力。</strong>
+                    <strong class="lang-en">Arrange periodic no-AI practice tasks to strengthen foundational skills.</strong>
+                  </span>
+                  <span class="radio" aria-hidden="true"></span>
+                </button>
+                <div class="path-logic" aria-live="polite"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <nav class="scene-nav" aria-label="Scenario navigation">
+          <button class="text-button" type="button" data-go="0">
+            <span aria-hidden="true">←</span>
+            <span class="lang-zh">返回封面</span>
+            <span class="lang-en">Cover</span>
+          </button>
+          <button class="next-button" type="button" data-go="2" disabled>
+            <span class="wait-label">
+              <span class="lang-zh">选择一个方案后继续</span>
+              <span class="lang-en">Choose an approach first</span>
+            </span>
+            <span class="next-label">
+              <span class="lang-zh">下一页</span>
+              <span class="lang-en">Next</span>
+            </span>
+            <span aria-hidden="true">→</span>
+          </button>
+        </nav>
+      </div>
+    </section>
+
+    <section class="screen scene-screen" id="act-2" data-screen="2" aria-labelledby="act-2-title">
+      <div class="page-shell">
+        <div class="scene-heading">
+          <span class="scene-number">02</span>
+          <div class="title-pair pair-title" id="act-2-title">
+            <h2 class="lang-zh">AI 提速之后，<br>谁来守住能力底线？</h2>
+            <h2 class="lang-en">When AI speeds things up,<br>who protects capability?</h2>
+          </div>
+          <span class="scene-count">02 / 03</span>
+        </div>
+
+        <div class="scene-layout">
+          <section class="scenario-panel" aria-labelledby="scenario-2-label">
+            <span class="section-label" id="scenario-2-label">
+              <span class="lang-zh">情境</span>
+              <span class="lang-en">The situation</span>
+            </span>
+
+            <div class="scenario-text">
+              <p class="lang-zh">一段时间之后，这名初级开发继续依靠 AI 产出代码，团队不少人也跟着高频使用 AI。一次线上故障追溯时发现，问题就出在一段 AI 生成的代码；更麻烦的是，当初写代码的人，也没法清晰解释它的底层逻辑。整个团队在排查时非常被动，独立排障效率大打折扣。有同事提议，限制初级开发者使用 AI。</p>
+              <p class="lang-en">The junior developer keeps relying on AI to produce code, and many teammates now use AI frequently too. During a production incident review, the root cause turns out to be AI-generated code. Worse, its original author cannot clearly explain the underlying logic. The team struggles badly during troubleshooting, and independent diagnosis slows dramatically. A colleague proposes restricting junior developers’ access to AI.</p>
+            </div>
+
+            <div class="question-block">
+              <span class="section-label">
+                <span class="lang-zh">问题</span>
+                <span class="lang-en">Question</span>
+              </span>
+              <p class="question-text lang-zh">如果你是管理者，你会如何回应这个提议？你做决策会优先考虑哪些因素？</p>
+              <p class="question-text lang-en">As the manager, how would you respond to the proposal? What factors would you prioritise?</p>
+            </div>
+          </section>
+
+          <section class="decision-panel" aria-label="Three management perspectives">
+            <span class="section-label">
+              <span class="lang-zh">选择一个方案</span>
+              <span class="lang-en">Choose one approach</span>
+            </span>
+
+            <div class="option-list">
+              <div class="option-block">
+                <button class="option" type="button" data-choice="1" aria-pressed="false">
+                  <span class="option-key">A</span>
+                  <span class="option-copy">
+                    <strong class="lang-zh">落实使用限制，降低故障风险，倒逼大家练习独立排障。</strong>
+                    <strong class="lang-en">Enforce restrictions to reduce failure risk and require independent debugging practice.</strong>
+                  </span>
+                  <span class="radio" aria-hidden="true"></span>
+                </button>
+                <div class="path-logic" aria-live="polite"></div>
+              </div>
+
+              <div class="option-block">
+                <button class="option" type="button" data-choice="2" aria-pressed="false">
+                  <span class="option-key">B</span>
+                  <span class="option-copy">
+                    <strong class="lang-zh">不限制 AI 使用，新增前置评审、AI 代码校验流程，把风险管控在流程里。</strong>
+                    <strong class="lang-en">Keep AI available, but add pre-deployment review and AI-code validation to control risk within the workflow.</strong>
+                  </span>
+                  <span class="radio" aria-hidden="true"></span>
+                </button>
+                <div class="path-logic" aria-live="polite"></div>
+              </div>
+
+              <div class="option-block">
+                <button class="option" type="button" data-choice="3" aria-pressed="false">
+                  <span class="option-key">C</span>
+                  <span class="option-copy">
+                    <strong class="lang-zh">区分场景使用 AI——常规开发可用，故障复盘、难题攻坚要求独立思考。</strong>
+                    <strong class="lang-en">Use AI selectively—allow it for routine development, but require independent thinking for incident reviews and complex problems.</strong>
+                  </span>
+                  <span class="radio" aria-hidden="true"></span>
+                </button>
+                <div class="path-logic" aria-live="polite"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <nav class="scene-nav" aria-label="Scenario navigation">
+          <button class="text-button" type="button" data-go="1">
+            <span aria-hidden="true">←</span>
+            <span class="lang-zh">上一页</span>
+            <span class="lang-en">Previous</span>
+          </button>
+          <button class="next-button" type="button" data-go="3" disabled>
+            <span class="wait-label">
+              <span class="lang-zh">选择一个方案后继续</span>
+              <span class="lang-en">Choose an approach first</span>
+            </span>
+            <span class="next-label">
+              <span class="lang-zh">下一页</span>
+              <span class="lang-en">Next</span>
+            </span>
+            <span aria-hidden="true">→</span>
+          </button>
+        </nav>
+      </div>
+    </section>
+
+    <section class="screen scene-screen" id="act-3" data-screen="3" aria-labelledby="act-3-title">
+      <div class="page-shell">
+        <div class="scene-heading">
+          <span class="scene-number">03</span>
+          <div class="title-pair pair-title" id="act-3-title">
+            <h2 class="lang-zh">守住底线之后，<br>还要带他走向哪里？</h2>
+            <h2 class="lang-en">Once the baseline is safe,<br>where should growth go next?</h2>
+          </div>
+          <span class="scene-count">03 / 03</span>
+        </div>
+
+        <div class="scene-layout">
+          <section class="scenario-panel" aria-labelledby="scenario-3-label">
+            <span class="section-label" id="scenario-3-label">
+              <span class="lang-zh">情境</span>
+              <span class="lang-en">The situation</span>
+            </span>
+
+            <div class="scenario-text">
+              <p class="lang-zh">那次线上故障之后，团队最终没有一刀切禁止 AI，而是落地了差异化使用规则：常规开发允许使用 AI，但故障复盘、复杂问题攻坚必须独立思考。一段时间之后，你观察到这名初级开发：常规开发任务完成得又快又好，但总是回避高难度、需要独立深度推演的任务，很少主动挑战超出当前能力的工作。作为他的管理者，你打算怎么支持他持续成长？</p>
+              <p class="lang-en">After the production incident, the team decides not to ban AI entirely. Instead, it adopts differentiated rules: AI is permitted for routine development, while incident reviews and complex problem-solving require independent thinking. Later, you observe the junior developer completing routine tasks efficiently, but consistently avoiding difficult assignments that demand independent, in-depth reasoning. He rarely volunteers for work beyond his current comfort zone. As his manager, how will you support his continued growth?</p>
+            </div>
+
+            <div class="question-block">
+              <span class="section-label">
+                <span class="lang-zh">问题</span>
+                <span class="lang-en">Question</span>
+              </span>
+              <p class="question-text lang-zh">你更倾向哪一种思路？或者你会设计不一样的做法？你的判断依据是什么？</p>
+              <p class="question-text lang-en">Which perspective resonates more with you? Or would you take a different approach? What is your reasoning?</p>
+            </div>
+          </section>
+
+          <section class="decision-panel" aria-label="Three management perspectives">
+            <span class="section-label">
+              <span class="lang-zh">选择一个方案</span>
+              <span class="lang-en">Choose one approach</span>
+            </span>
+
+            <div class="option-list">
+              <div class="option-block">
+                <button class="option" type="button" data-choice="1" aria-pressed="false">
+                  <span class="option-key">A</span>
+                  <span class="option-copy">
+                    <strong class="lang-zh">尊重他的选择，优先安排适配他当前水平的常规任务，保证稳定产出，成长顺其自然。</strong>
+                    <strong class="lang-en">Respect his preference: assign mostly routine work matching his current level, ensure stable output, and let growth happen organically.</strong>
+                  </span>
+                  <span class="radio" aria-hidden="true"></span>
+                </button>
+                <div class="path-logic" aria-live="polite"></div>
+              </div>
+
+              <div class="option-block">
+                <button class="option" type="button" data-choice="2" aria-pressed="false">
+                  <span class="option-key">B</span>
+                  <span class="option-copy">
+                    <strong class="lang-zh">逐步设置“带支架的挑战性任务”，在可控范围内要求他独立攻克难题，并同步提供一对一指导。</strong>
+                    <strong class="lang-en">Gradually assign scaffolded challenges: require independent problem-solving within a manageable scope, paired with one-to-one coaching.</strong>
+                  </span>
+                  <span class="radio" aria-hidden="true"></span>
+                </button>
+                <div class="path-logic" aria-live="polite"></div>
+              </div>
+
+              <div class="option-block">
+                <button class="option" type="button" data-choice="3" aria-pressed="false">
+                  <span class="option-key">C</span>
+                  <span class="option-copy">
+                    <strong class="lang-zh">要求他必须均衡承接常规任务和高难度任务，硬性分配攻坚任务，倒逼他走出舒适区。</strong>
+                    <strong class="lang-en">Require a balanced workload of routine and difficult work, and mandate challenging assignments to force him out of his comfort zone.</strong>
+                  </span>
+                  <span class="radio" aria-hidden="true"></span>
+                </button>
+                <div class="path-logic" aria-live="polite"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <nav class="scene-nav" aria-label="Scenario navigation">
+          <button class="text-button" type="button" data-go="2">
+            <span aria-hidden="true">←</span>
+            <span class="lang-zh">上一页</span>
+            <span class="lang-en">Previous</span>
+          </button>
+          <button class="next-button" type="button" data-go="4" disabled>
+            <span class="wait-label">
+              <span class="lang-zh">选择一个方案后继续</span>
+              <span class="lang-en">Choose an approach first</span>
+            </span>
+            <span class="next-label">
+              <span class="lang-zh">最后一页</span>
+              <span class="lang-en">Finish</span>
+            </span>
+            <span aria-hidden="true">→</span>
+          </button>
+        </nav>
+      </div>
+    </section>
+
+    <section class="screen summary-screen" id="summary" data-screen="4" aria-labelledby="summary-title">
+      <div class="page-shell summary-content">
+        <div class="summary-heading">
+          <span class="section-label">
+            <span class="lang-zh">复盘</span>
+            <span class="lang-en">Review</span>
+          </span>
+          <div class="title-pair" id="summary-title">
+            <h2 class="lang-zh">让 AI 放大能力，<br>而不是替代思考。</h2>
+            <h2 class="lang-en">Let AI amplify capability,<br>not replace thinking.</h2>
+          </div>
+        </div>
+
+        <div class="principle-list">
+          <article>
+            <span>01</span>
+            <h3 class="lang-zh">先理解，再交付</h3>
+            <h3 class="lang-en">Understand before delivery</h3>
+          </article>
+          <article>
+            <span>02</span>
+            <h3 class="lang-zh">AI 处理常规，思考留给难题</h3>
+            <h3 class="lang-en">AI for routine, thinking for complexity</h3>
+          </article>
+          <article>
+            <span>03</span>
+            <h3 class="lang-zh">衡量能力，不只衡量速度</h3>
+            <h3 class="lang-en">Measure capability, not just speed</h3>
+          </article>
+        </div>
+
+        <section class="final-question-panel" aria-labelledby="final-question-title">
+          <span class="section-label">
+            <span class="lang-zh">最后的问题</span>
+            <span class="lang-en">Final question</span>
+          </span>
+          <div class="title-pair final-question-title" id="final-question-title">
+            <h2 class="lang-zh">在今天这三组管理方案里，哪一条放到真实职场里最难落地？为什么？</h2>
+            <h2 class="lang-en">Today, which of these three management approaches would be hardest to implement in a real workplace? Why?</h2>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
